@@ -60,9 +60,6 @@ if [ "$interactive" = "1" ]; then
     fi
 fi
 
-echo $key
-echo $value
-
 echo "export $key=\"$value\"" >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 echo "unset $key" >> $CONDA_PREFIX/etc/conda/deactivate.d/env_vars.sh
 
